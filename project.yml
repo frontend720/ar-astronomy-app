@@ -1,0 +1,56 @@
+name: Overhead
+options:
+  bundleIdPrefix: com.frontend720
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+
+configs:
+  Debug: debug
+  Release: release
+
+settings:
+  base:
+    SWIFT_VERSION: "5.10"
+    TARGETED_DEVICE_FAMILY: "1"
+    IPHONEOS_DEPLOYMENT_TARGET: "16.0"
+
+packages:
+  OverheadCore:
+    path: OverheadCore
+
+targets:
+  Overhead:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      # Excludes guard against exactly the bug fixed on 2026-07-25: a stray, non-package
+      # "Packages/" or ".build/" style directory dropped inside Overhead/ gets silently
+      # swept into the app target as loose source files by this recursive glob, compiled
+      # outside the real OverheadCore module (so its types aren't visible), and causes
+      # baffling "Cannot find type" errors. The actual OverheadCore package lives at the
+      # repo root and is referenced via `packages:` below — nothing under Overhead/ should
+      # ever be a second copy of it.
+      - path: Overhead
+        excludes:
+          - "Packages/**"
+          - "**/.build/**"
+    dependencies:
+      - package: OverheadCore
+    info:
+      path: Overhead/Info.plist
+      properties:
+        CFBundleDisplayName: "Overhead"
+        UILaunchScreen: {}
+        UIRequiredDeviceCapabilities: [arm64, arkit]
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        NSCameraUsageDescription: "Overhead uses the camera to overlay live satellite positions on the real sky in AR."
+        NSLocationWhenInUseUsageDescription: "Overhead needs your location to calculate which satellites are overhead and align the AR view with true north."
+        ITSAppUsesNonExemptEncryption: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.frontend720.overhead
+        DEVELOPMENT_TEAM: ""
+        CODE_SIGN_STYLE: Automatic

@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24C9FF933F3FCAC00ABBCA8D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A058C6D3D07BC9A028A21E6 /* SettingsView.swift */; };
+		289DD435F78E97AC92201C73 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B934A149D20B09C335040BD1 /* LocationService.swift */; };
+		34B25C39A7FCD81479297FED /* SatelliteLabelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A428F47C6238DAA47849EA9 /* SatelliteLabelNode.swift */; };
+		42EAD9567BEDA0A5E9798AB6 /* InfoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C626FFD265D0BDB069DF0CF /* InfoCardView.swift */; };
+		5C20095330155A8B00073E00 /* ProcessingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C20095230155A8B00073E00 /* ProcessingStrategy.swift */; };
+		5C20095530155A9300073E00 /* ImageProcessingPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C20095430155A9300073E00 /* ImageProcessingPipeline.swift */; };
+		5C20095730155A9F00073E00 /* LocalMetalPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C20095630155A9F00073E00 /* LocalMetalPipeline.swift */; };
+		5C20095930155B3B00073E00 /* RemotePythonPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C20095830155B3B00073E00 /* RemotePythonPipeline.swift */; };
+		5C20095B30155B4800073E00 /* AstrophotographyEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C20095A30155B4800073E00 /* AstrophotographyEngine.swift */; };
+		5C20095D30155DFB00073E00 /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C20095C30155DFB00073E00 /* CaptureView.swift */; };
+		5C20095F30155E0700073E00 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C20095E30155E0700073E00 /* GalleryView.swift */; };
+		5C200961301570C200073E00 /* PlanetNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C200960301570C200073E00 /* PlanetNode.swift */; };
+		5C200963301578A600073E00 /* PlanetInfoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C200962301578A600073E00 /* PlanetInfoCardView.swift */; };
+		5C2009653015B35400073E00 /* MoonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2009643015B35400073E00 /* MoonNode.swift */; };
+		5C2009673015B36000073E00 /* MoonInfoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2009663015B36000073E00 /* MoonInfoCardView.swift */; };
+		5C2009693015D6DB00073E00 /* CompassCalibrationOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2009683015D6DB00073E00 /* CompassCalibrationOverlay.swift */; };
+		966DA4769816DBC08E9421C0 /* SatelliteTrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1695CA3236D64EE78AEFD126 /* SatelliteTrackingService.swift */; };
+		9C204BBC30C63C58C0444487 /* SkyLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6439EC2E24F4D82064456C /* SkyLayer.swift */; };
+		9C8841AF492D7C9A3DD438A0 /* constellations.json in Resources */ = {isa = PBXBuildFile; fileRef = 02E7957A77B07D4DFEAEC4FA /* constellations.json */; };
+		A7AB81D8BB0A6D783EDD3BBC /* OverheadCore in Frameworks */ = {isa = PBXBuildFile; productRef = 29D971A11A842B686D47E4AB /* OverheadCore */; };
+		BEE4ECC3D4EFC60034AE8C15 /* SkyARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F6FC6AADA9DC560DCCE39 /* SkyARView.swift */; };
+		C076986A32347A58FE369EF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F1B6FBFE9DAC8907398709 /* ContentView.swift */; };
+		C38AD18887FBA15A0B814667 /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBAA382C1E921C7C47ABF70 /* DebugView.swift */; };
+		DDFD11D44019CF136A2E35FC /* OverheadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6851F7723449F213793964 /* OverheadApp.swift */; };
+		FD94D1ACC94E92C5C1394823 /* ConstellationOverlayNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C08FBC883F44EDD2583F37 /* ConstellationOverlayNode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02C08FBC883F44EDD2583F37 /* ConstellationOverlayNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstellationOverlayNode.swift; sourceTree = "<group>"; };
+		02E7957A77B07D4DFEAEC4FA /* constellations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = constellations.json; sourceTree = "<group>"; };
+		0A428F47C6238DAA47849EA9 /* SatelliteLabelNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatelliteLabelNode.swift; sourceTree = "<group>"; };
+		1695CA3236D64EE78AEFD126 /* SatelliteTrackingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatelliteTrackingService.swift; sourceTree = "<group>"; };
+		184F6FC6AADA9DC560DCCE39 /* SkyARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyARView.swift; sourceTree = "<group>"; };
+		2038083FDFCFF122247A0DFC /* OverheadCore */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OverheadCore; sourceTree = SOURCE_ROOT; };
+		3C626FFD265D0BDB069DF0CF /* InfoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCardView.swift; sourceTree = "<group>"; };
+		52E133269A87CEB5BFD8AA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5C20095230155A8B00073E00 /* ProcessingStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingStrategy.swift; sourceTree = "<group>"; };
+		5C20095430155A9300073E00 /* ImageProcessingPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessingPipeline.swift; sourceTree = "<group>"; };
+		5C20095630155A9F00073E00 /* LocalMetalPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalMetalPipeline.swift; sourceTree = "<group>"; };
+		5C20095830155B3B00073E00 /* RemotePythonPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePythonPipeline.swift; sourceTree = "<group>"; };
+		5C20095A30155B4800073E00 /* AstrophotographyEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrophotographyEngine.swift; sourceTree = "<group>"; };
+		5C20095C30155DFB00073E00 /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
+		5C20095E30155E0700073E00 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		5C200960301570C200073E00 /* PlanetNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetNode.swift; sourceTree = "<group>"; };
+		5C200962301578A600073E00 /* PlanetInfoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetInfoCardView.swift; sourceTree = "<group>"; };
+		5C2009643015B35400073E00 /* MoonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonNode.swift; sourceTree = "<group>"; };
+		5C2009663015B36000073E00 /* MoonInfoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonInfoCardView.swift; sourceTree = "<group>"; };
+		5C2009683015D6DB00073E00 /* CompassCalibrationOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassCalibrationOverlay.swift; sourceTree = "<group>"; };
+		7A058C6D3D07BC9A028A21E6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7A6851F7723449F213793964 /* OverheadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverheadApp.swift; sourceTree = "<group>"; };
+		9EBAA382C1E921C7C47ABF70 /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
+		B934A149D20B09C335040BD1 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		DD6439EC2E24F4D82064456C /* SkyLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyLayer.swift; sourceTree = "<group>"; };
+		EA28409B6376F9509B73E693 /* Overhead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Overhead.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2F1B6FBFE9DAC8907398709 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		407590C029828E8A7C039EF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7AB81D8BB0A6D783EDD3BBC /* OverheadCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CFDA8D851A3C8CCB5F7E3CB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				02E7957A77B07D4DFEAEC4FA /* constellations.json */,
+				F2F1B6FBFE9DAC8907398709 /* ContentView.swift */,
+				7A6851F7723449F213793964 /* OverheadApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		11AB29DB161715305F7253EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA28409B6376F9509B73E693 /* Overhead.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48EED5377BE255AB34A228ED /* Overhead */ = {
+			isa = PBXGroup;
+			children = (
+				52E133269A87CEB5BFD8AA86 /* Info.plist */,
+				0CFDA8D851A3C8CCB5F7E3CB /* App */,
+				AC450D66BFD1B7F18CB81BB4 /* AR */,
+				B8590CA9F0A14FA60721F567 /* Services */,
+				913E1BE2F914376FCE01CBE8 /* Views */,
+				5C20095130155A8B00073E00 /* Processing */,
+			);
+			path = Overhead;
+			sourceTree = "<group>";
+		};
+		5C20095130155A8B00073E00 /* Processing */ = {
+			isa = PBXGroup;
+			children = (
+				5C20095230155A8B00073E00 /* ProcessingStrategy.swift */,
+				5C20095430155A9300073E00 /* ImageProcessingPipeline.swift */,
+				5C20095630155A9F00073E00 /* LocalMetalPipeline.swift */,
+				5C20095830155B3B00073E00 /* RemotePythonPipeline.swift */,
+				5C20095A30155B4800073E00 /* AstrophotographyEngine.swift */,
+			);
+			path = Processing;
+			sourceTree = "<group>";
+		};
+		7E27ADDF6D2B6EC82AAD3CCF /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				2038083FDFCFF122247A0DFC /* OverheadCore */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		913E1BE2F914376FCE01CBE8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9EBAA382C1E921C7C47ABF70 /* DebugView.swift */,
+				3C626FFD265D0BDB069DF0CF /* InfoCardView.swift */,
+				7A058C6D3D07BC9A028A21E6 /* SettingsView.swift */,
+				5C20095C30155DFB00073E00 /* CaptureView.swift */,
+				5C20095E30155E0700073E00 /* GalleryView.swift */,
+				5C200962301578A600073E00 /* PlanetInfoCardView.swift */,
+				5C2009663015B36000073E00 /* MoonInfoCardView.swift */,
+				5C2009683015D6DB00073E00 /* CompassCalibrationOverlay.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AC450D66BFD1B7F18CB81BB4 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				02C08FBC883F44EDD2583F37 /* ConstellationOverlayNode.swift */,
+				0A428F47C6238DAA47849EA9 /* SatelliteLabelNode.swift */,
+				184F6FC6AADA9DC560DCCE39 /* SkyARView.swift */,
+				DD6439EC2E24F4D82064456C /* SkyLayer.swift */,
+				5C200960301570C200073E00 /* PlanetNode.swift */,
+				5C2009643015B35400073E00 /* MoonNode.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		B8590CA9F0A14FA60721F567 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B934A149D20B09C335040BD1 /* LocationService.swift */,
+				1695CA3236D64EE78AEFD126 /* SatelliteTrackingService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E32C839852B5FCF463141FF7 = {
+			isa = PBXGroup;
+			children = (
+				48EED5377BE255AB34A228ED /* Overhead */,
+				7E27ADDF6D2B6EC82AAD3CCF /* Packages */,
+				11AB29DB161715305F7253EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77B7CC9FAC71CDF7CD526298 /* Overhead */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76A20E8943C7442ED793766C /* Build configuration list for PBXNativeTarget "Overhead" */;
+			buildPhases = (
+				3B71A4C9155B95754774195F /* Sources */,
+				6CED3D94947ABA443A747492 /* Resources */,
+				407590C029828E8A7C039EF2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Overhead;
+			packageProductDependencies = (
+				29D971A11A842B686D47E4AB /* OverheadCore */,
+			);
+			productName = Overhead;
+			productReference = EA28409B6376F9509B73E693 /* Overhead.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F18B5005EFF05B914E492A56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					77B7CC9FAC71CDF7CD526298 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AC9064D5CA935187FF46A345 /* Build configuration list for PBXProject "Overhead" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = E32C839852B5FCF463141FF7;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				57D381C37BAB54FADB1C7C60 /* XCLocalSwiftPackageReference "OverheadCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 11AB29DB161715305F7253EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77B7CC9FAC71CDF7CD526298 /* Overhead */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CED3D94947ABA443A747492 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C8841AF492D7C9A3DD438A0 /* constellations.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B71A4C9155B95754774195F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C200963301578A600073E00 /* PlanetInfoCardView.swift in Sources */,
+				5C2009693015D6DB00073E00 /* CompassCalibrationOverlay.swift in Sources */,
+				FD94D1ACC94E92C5C1394823 /* ConstellationOverlayNode.swift in Sources */,
+				5C20095730155A9F00073E00 /* LocalMetalPipeline.swift in Sources */,
+				5C2009673015B36000073E00 /* MoonInfoCardView.swift in Sources */,
+				C076986A32347A58FE369EF7 /* ContentView.swift in Sources */,
+				C38AD18887FBA15A0B814667 /* DebugView.swift in Sources */,
+				42EAD9567BEDA0A5E9798AB6 /* InfoCardView.swift in Sources */,
+				289DD435F78E97AC92201C73 /* LocationService.swift in Sources */,
+				5C20095D30155DFB00073E00 /* CaptureView.swift in Sources */,
+				5C20095F30155E0700073E00 /* GalleryView.swift in Sources */,
+				5C20095530155A9300073E00 /* ImageProcessingPipeline.swift in Sources */,
+				5C20095930155B3B00073E00 /* RemotePythonPipeline.swift in Sources */,
+				DDFD11D44019CF136A2E35FC /* OverheadApp.swift in Sources */,
+				34B25C39A7FCD81479297FED /* SatelliteLabelNode.swift in Sources */,
+				966DA4769816DBC08E9421C0 /* SatelliteTrackingService.swift in Sources */,
+				5C20095B30155B4800073E00 /* AstrophotographyEngine.swift in Sources */,
+				5C2009653015B35400073E00 /* MoonNode.swift in Sources */,
+				24C9FF933F3FCAC00ABBCA8D /* SettingsView.swift in Sources */,
+				5C200961301570C200073E00 /* PlanetNode.swift in Sources */,
+				BEE4ECC3D4EFC60034AE8C15 /* SkyARView.swift in Sources */,
+				9C204BBC30C63C58C0444487 /* SkyLayer.swift in Sources */,
+				5C20095330155A8B00073E00 /* ProcessingStrategy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		60B2641D6991E6DC37A49FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G692AYHXTB;
+				INFOPLIST_FILE = Overhead/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.frontend720.overhead;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66D6BD41EF7657E52535851C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.10;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7396377CAD0A3EA913978623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.10;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		92671D3EAF52E3F17D791AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G692AYHXTB;
+				INFOPLIST_FILE = Overhead/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.frontend720.overhead;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76A20E8943C7442ED793766C /* Build configuration list for PBXNativeTarget "Overhead" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60B2641D6991E6DC37A49FA5 /* Debug */,
+				92671D3EAF52E3F17D791AF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AC9064D5CA935187FF46A345 /* Build configuration list for PBXProject "Overhead" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66D6BD41EF7657E52535851C /* Debug */,
+				7396377CAD0A3EA913978623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		57D381C37BAB54FADB1C7C60 /* XCLocalSwiftPackageReference "OverheadCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = OverheadCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		29D971A11A842B686D47E4AB /* OverheadCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OverheadCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F18B5005EFF05B914E492A56 /* Project object */;
+}
