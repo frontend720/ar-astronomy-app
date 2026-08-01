@@ -68,6 +68,12 @@ The flagship feature is **AR sky overlay for live satellite tracking**:
 - Pass prediction / notifications ("ISS visible over you in 6 minutes")
 - Basic object info card on tap (altitude, velocity, launch info)
 
+### Phase 1.5 — Widgets
+**Home Screen & Lock Screen widgets** (StandBy comes free on iOS 17+ once Lock Screen families ship)
+- "What's overhead right now" as a Home Screen / Lock Screen glance, reusing existing `OverheadCore` position math and TLE cache — no new network calls
+- Design-only for now; see [`docs/WIDGETS.md`](docs/WIDGETS.md) for the full plan, App Group data-sharing approach, and open questions
+- Not yet started — no `WidgetKit` extension target exists in `project.yml`
+
 ### Phase 2 — Premium Add-On
 **Aurora / Space Weather Alerts**
 - Push alerts on elevated geomagnetic activity (Kp index thresholds) for the user's location
@@ -149,3 +155,4 @@ project.yml                XcodeGen source of truth — regenerate the .xcodepro
 - [ ] Define notification permission flow / pass-prediction UX (math exists in `PassPredictor`, no scheduling wired up yet)
 - [ ] Decide whether this sits inside the existing app portfolio's shared design language or gets its own visual identity
 - [ ] Build and run on a real device to verify the AR overlay actually looks right (unverified — see Project Status)
+- [ ] Widget/Lock Screen plan drafted (`docs/WIDGETS.md`) — target scaffolding, App Group entitlement, and TLE cache relocation still need to be built and verified on a real Mac
